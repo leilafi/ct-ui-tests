@@ -1,0 +1,14 @@
+{"argushomepage":
+  [{"key":"url", "searchby":"none", "value":"http://www.arguscarhire.com/"},
+    {"key":"page-title","searchby":"title", "value":"Argus Car Hire compares the prices of 1200 car hire agents at 30,000 locations worldwide to find you the cheapest deal!"},
+    {"key": "popular-country", "searchby":"link text", "value":"Italy"},
+    {"key":"popular-city", "searchby":"link text", "value":"Mallorca"},
+    {"key": "all-countries", "searchby":"link text", "value":["Italy", "France"]}],
+ "arguslocation":
+  [{"key":"page-title","searchby":"title", "value":"Car Hire ITALY"},
+    {"key":"url", "searchby":"none" ,"value":"http://www.arguscarhire.com/car-hire/italy.html"},
+    {"key":"popular-destination", "searchby":"class name", "value":"mostpopular"},
+    {"key": "airport", "searchby":"partial link text", "value":"Airport"}],
+  "argusdestination":
+  [{"key":"page-title", "searchby":"title", "value":"Airport"}]
+}
