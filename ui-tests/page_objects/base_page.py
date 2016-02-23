@@ -2,12 +2,12 @@ from selenium import webdriver
 from helpers import get_elements, logs
 import selenium.webdriver.support.ui as ui
 
-
 class BasePage(object):
 
     def __init__(self):
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(5) # wait for the elements to load
+        self.page_name = "basepage"
         self.url_key = "url"
         self.title_key = "page-title"
 
@@ -45,6 +45,9 @@ class BasePage(object):
         logs.done()
         return element
 
+    def element_click(self, link_text, element):
+        logs.start("clicking on an %s" %link_text)
+        element.click()
 
     def __del__(self):
         self.driver.quit()

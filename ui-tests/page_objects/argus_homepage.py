@@ -12,9 +12,9 @@ class ArgusHomepage(base_page.BasePage):
         self.country_key = "popular-country"
         self.all_locations = "all-countries"
 
-    def element_click(self, link_text, element):
-        logs.start("clicking on an %s" %link_text)
-        element.click()
+    # def element_click(self, link_text, element):
+    #     logs.start("clicking on an %s" %link_text)
+    #     element.click()
 
     def location_name(self):
         logs.start("finding the name of the location which is clicked")
