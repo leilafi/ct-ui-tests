@@ -8,9 +8,12 @@
       "Barcelona", "Lisbon", "London"]}],
  "arguslocation":
   [{"key":"page-title","searchby":"title", "value":"Car Hire ITALY"},
-    {"key":"url", "searchby":"none" ,"value":"http://www.arguscarhire.com/car-hire/italy.html"},
+    {"key":"url", "searchby":"none" ,"value":"http://www.arguscarhire.com/car-hire/greece.html"},
     {"key":"popular-destination", "searchby":"class name", "value":"mostpopular"},
     {"key": "airport", "searchby":"partial link text", "value":"Airport"}],
   "argusdestination":
-  [{"key":"page-title", "searchby":"title", "value":"Airport"}]
+  [{"key":"page-title", "searchby":"title", "value":"Airport"}],
+  "arguscarhire":
+  [{"key":"url", "searchby":"none", "value":"http://www.arguscarhire.com/car-hire/"},
+    {"key":"all-countries", "searchby":"link text", "value":["Albania"]}]
 }
