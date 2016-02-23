@@ -7,4 +7,3 @@ class CarHirePage(base_page.BasePage):
         self.page_name = "arguscarhire"
         self.all_locations = "all-countries"
 
-    #def cli
