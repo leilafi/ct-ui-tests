@@ -1,6 +1,6 @@
 from selenium import webdriver
 from helpers import get_elements, logs
-from selenium.webdriver.support.ui import Select
+
 
 class BasePage(object):
 
@@ -19,7 +19,8 @@ class BasePage(object):
         title = self.driver.title
         return title
 
-    def find_locations(self, page_name, element_key):
+    def get_locations_text_and_element(self, page_name, element_key):
+        # Returns a dictionary of country element and country text
         logs.start("finding_locations %s in %s" %(element_key, page_name))
         element_data = get_elements.return_element_data(page_name, element_key)
         dict_links = {}
@@ -53,7 +54,7 @@ class BasePage(object):
         #return item
 
     def element_click(self, element_text, element):
-        logs.start("clicking on an %s" %element_text)
+        logs.start("clicking on %s" %element_text)
         element.click()
 
     def __del__(self):
