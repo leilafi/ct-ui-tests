@@ -5,14 +5,16 @@
     {"key":"popular-city", "searchby":"link text", "value":"Mallorca"},
     {"key": "all-countries", "searchby":"link text", "value":["Australia", "Canada", "Cyprus", "France", "Germany", "Greece", "Italy", "Ireland", "Netherlands",
       "New Zealand", "South Africa", "Spain", "Switzerland", "Thailand", "Malaga", "Faro", "Alicante", "Dublin", "Mallorca", "Porto", "Kefalonia", "Rhodes",
-      "Barcelona", "Lisbon", "London"]}],
+      "Barcelona", "Lisbon", "London"]},
+    {"key":"contact-us", "searchby":"link text", "value":"Contact Us"}],
  "arguslocation":
   [{"key":"page-title","searchby":"title", "value":"Car Hire ITALY"},
     {"key":"url", "searchby":"none" ,"value":"http://www.arguscarhire.com/car-hire/greece.html"},
     {"key":"popular-destination", "searchby":"class name", "value":"mostpopular"},
     {"key": "airport", "searchby":"partial link text", "value":"Airport"}],
   "argusdestination":
-  [{"key":"page-title", "searchby":"title", "value":"Airport"}],
+  [{"key":"page-title", "searchby":"title", "value":"Airport"},
+    {"key":"page-header", "searchby":"css selector", "value":"h2"}],
   "arguscarhire":
   [{"key":"url", "searchby":"none", "value":"http://www.arguscarhire.com/car-hire/"},
     {"key":"all-countries", "searchby":"link text", "value":["Albania"]}],
@@ -23,5 +25,9 @@
     {"key":"popular-translation", "searchby":"link text", "value":"Gestione prenotazione"},
     {"key":"language", "searchby":"xpath", "value":"//div[@id='select-lang_dropdown']/div[2]/div/div/dl/div/div/dd[8]"},
     {"key":"translation", "searchby":"link text", "value":"Håndter bestilling"}
+    ],
+  "arguscontactus":
+    [{"key":"page-header", "searchby":"css selector", "value":"h1"},
+      {"key":"page-title", "searchby":"title", "value":"Customer Service"}
     ]
 }
