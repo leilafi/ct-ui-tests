@@ -15,5 +15,11 @@
   [{"key":"page-title", "searchby":"title", "value":"Airport"}],
   "arguscarhire":
   [{"key":"url", "searchby":"none", "value":"http://www.arguscarhire.com/car-hire/"},
-    {"key":"all-countries", "searchby":"link text", "value":["Albania"]}]
+    {"key":"all-countries", "searchby":"link text", "value":["Albania"]}],
+  "arguslanguages":
+  [{"key":"url", "searchby":"none", "value":"http://www.arguscarhire.com/"},
+    {"key":"cssmenu", "searchby":"css selector", "value":"div.selectedValue"},
+    {"key":"xpathlang", "searchby":"xpath", "value":"//div[@id='select-lang_dropdown']/div[2]/div/div/dl/div/div/dd[4]"},
+    {"key":"language-code", "searchby":"link text", "value":"Gestione prenotazione"}
+    ]
 }
