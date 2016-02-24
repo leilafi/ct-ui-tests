@@ -1,6 +1,6 @@
 from selenium import webdriver
 from helpers import get_elements, logs
-import selenium.webdriver.support.ui as ui
+from selenium.webdriver.support.ui import Select
 
 class BasePage(object):
 
@@ -45,8 +45,15 @@ class BasePage(object):
         logs.done()
         return element
 
-    def element_click(self, link_text, element):
-        logs.start("clicking on an %s" %link_text)
+    def select_menu_option(self, page_name, menu, menu_item):
+        logs.start("selecting %s in %s" %(menu_item, "menu"))
+        print menu
+        element_data = get_elements.return_element_data(page_name, menu_item)
+        menu.select_by_visible_text(element_data[1])
+        #return item
+
+    def element_click(self, element_text, element):
+        logs.start("clicking on an %s" %element_text)
         element.click()
 
     def __del__(self):
