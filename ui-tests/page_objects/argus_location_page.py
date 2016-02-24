@@ -8,6 +8,9 @@ class Location_Page(base_page.BasePage):
         self.destination_key = "popular-destination"
         self.airport_key = "airport"
 
+    def find_destination_link(self):
+        return self.find_element(self.page_name, self.destination_key)
+
     def destination_click(self):
         logs.start("start clicking on a popular destination")
         airport = (self.find_elements(self.page_name, self.airport_key))

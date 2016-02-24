@@ -12,3 +12,8 @@ class ArgusHomepage(base_page.BasePage):
         self.city_key = "popular-city"
         self.country_key = "popular-country"
         self.all_locations = "all-countries"
+        self.contact_us = "contact-us"
+
+    def click_contact_us(self):
+        contact = self.find_element(self.page_name,self.contact_us)
+        contact.click()

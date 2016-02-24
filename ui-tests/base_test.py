@@ -24,8 +24,8 @@ class BaseTest(unittest.TestCase):
             del r[key]
         return r
 
-    def assert_not_exist(self, element, element_key, page_name):
-        self.assertIsNotNone(element, "%s is missing from %s." %(element_key, page_name))
+    def assert_not_exist(self, element, page_name, element_name):
+        self.assertIsNotNone(element, "%s is missing from %s." %(element_name, page_name))
 
     def verify_all_location_links(self, this_page):
         clicked_history = []
