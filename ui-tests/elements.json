@@ -18,8 +18,10 @@
     {"key":"all-countries", "searchby":"link text", "value":["Albania"]}],
   "arguslanguages":
   [{"key":"url", "searchby":"none", "value":"http://www.arguscarhire.com/"},
-    {"key":"cssmenu", "searchby":"css selector", "value":"div.selectedValue"},
-    {"key":"xpathlang", "searchby":"xpath", "value":"//div[@id='select-lang_dropdown']/div[2]/div/div/dl/div/div/dd[4]"},
-    {"key":"language-code", "searchby":"link text", "value":"Gestione prenotazione"}
+    {"key":"language-menu", "searchby":"css selector", "value":"div.selectedValue"},
+    {"key":"popular-language", "searchby":"xpath", "value":"//div[@id='select-lang_dropdown']/div[2]/div/div/dl/div/div/dd[4]"},
+    {"key":"popular-translation", "searchby":"link text", "value":"Gestione prenotazione"},
+    {"key":"language", "searchby":"xpath", "value":"//div[@id='select-lang_dropdown']/div[2]/div/div/dl/div/div/dd[8]"},
+    {"key":"translation", "searchby":"link text", "value":"Håndter bestilling"}
     ]
 }
