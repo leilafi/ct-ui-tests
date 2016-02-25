@@ -9,11 +9,3 @@ class DestinationPage(base_page.BasePage):
         self.page_header = "page-header"
         self.parent_page = "arguslocation"
         self.link_name = "airport"
-
-    def land_page_from_parent(self):
-        self.land_page(self.parent_page)
-        self.element_click(self.link_name, self.find_element(self.parent_page, self.link_name))
-
-    def get_header(self):
-        header = self.find_element(self.page_name, self.page_header)
-        return header.text

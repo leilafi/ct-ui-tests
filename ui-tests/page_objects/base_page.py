@@ -10,16 +10,22 @@ class BasePage(object):
         self.page_name = "basepage"
         self.url_key = "url"
         self.title_key = "page-title"
+        self.header_key = "page-header"
 
     def land_page(self, page_name):
         url = get_elements.return_element_data(page_name, self.url_key)[1]
         self.driver.get(url)
 
+    def land_page_from_parent(self, parent_page, link_name):
+        logs.start("lading on %s"%link_name)
+        self.land_page(parent_page)
+        self.element_click(link_name, self.find_element(parent_page, link_name))
+
     def get_title(self):
         title = self.driver.title
         return title
 
-    def get_locations_text_and_element(self, page_name, element_key):
+    def get_link_text_and_element(self, page_name, element_key):
         # Returns a dictionary of country element and country text
         logs.start("finding_locations %s in %s" %(element_key, page_name))
         element_data = get_elements.return_element_data(page_name, element_key)
@@ -45,6 +51,10 @@ class BasePage(object):
         element = self.driver.find_elements(*element_data)
         logs.done()
         return element
+
+    def get_header(self, page_name):
+        header = self.find_element(page_name, self.header_key)
+        return header.text
 
     def select_menu_option(self, page_name, menu, menu_item):
         logs.start("selecting %s in %s" %(menu_item, "menu"))

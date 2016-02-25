@@ -1,4 +1,5 @@
-from page_objects import argus_homepage, argus_location_page, argus_destination_page, argus_car_hire_page, argus_language_menu, argus_contact_us_page
+from page_objects import argus_homepage, argus_location_page, argus_destination_page, \
+    argus_car_hire_page, argus_language_menu, argus_contact_us_page, argus_faq_page, argus_tandc_page, argus_policy_page
 import base_test
 import unittest
 
@@ -29,18 +30,38 @@ class ArgusTests(base_test.BaseTest):
 
     def test_argus_destination_from_location(self):
         this_destination = argus_destination_page.DestinationPage()
-        this_destination.land_page_from_parent()
-        self.verify_title(this_destination.get_header(),
+        this_destination.land_page_from_parent(this_destination.parent_page, this_destination.link_name)
+        self.verify_title(this_destination.get_header(this_destination.page_name),
                           this_destination.page_name,
                           this_destination.title_key, True)
 
     def test_argus_contact_us_from_homepage(self):
         this_contact = argus_contact_us_page.ContactUsPage()
-        this_contact.land_page_from_parent()
-        self.verify_title(this_contact.get_header(),
+        this_contact.land_page_from_parent(this_contact.parent_page, this_contact.link_name)
+        self.verify_title(this_contact.get_header(this_contact.page_name),
                           this_contact.page_name,
                           this_contact.title_key)
 
+    def test_argus_faq_from_homepage(self):
+        this_faqs = argus_faq_page.FAQPage()
+        this_faqs.land_page_from_parent(this_faqs.parent_page, this_faqs.link_name)
+        self.verify_title(this_faqs.get_header(this_faqs.page_name),
+                          this_faqs.page_name,
+                          this_faqs.title_key)
+
+    def test_argus_tandc_from_homepage(self):
+        this_tandc = argus_tandc_page.TANDCPage()
+        this_tandc.land_page_from_parent(this_tandc.parent_page, this_tandc.link_name)
+        self.verify_title(this_tandc.get_header(this_tandc.page_name),
+                          this_tandc.page_name,
+                          this_tandc.title_key)
+
+    def test_argus_policy_from_homepage(self):
+        this_policy = argus_policy_page.TANDCPage()
+        this_policy.land_page_from_parent(this_policy.parent_page, this_policy.link_name)
+        self.verify_title(this_policy.get_header(this_policy.page_name),
+                          this_policy.page_name,
+                          this_policy.title_key)
 
 if __name__ == '__main__':
     unittest.main()
