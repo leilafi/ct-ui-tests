@@ -1,5 +1,6 @@
 from page_objects import argus_homepage, argus_location_page, argus_destination_page, \
-    argus_car_hire_page, argus_language_menu, argus_contact_us_page, argus_faq_page, argus_tandc_page, argus_policy_page
+    argus_car_hire_page, argus_language_menu, argus_contact_us_page, argus_faq_page,\
+    argus_tandc_page, argus_policy_page, argus_sitemap_page
 import base_test
 import unittest
 
@@ -57,11 +58,24 @@ class ArgusTests(base_test.BaseTest):
                           this_tandc.title_key)
 
     def test_argus_policy_from_homepage(self):
-        this_policy = argus_policy_page.TANDCPage()
+        this_policy = argus_policy_page.PolicyPage()
         this_policy.land_page_from_parent(this_policy.parent_page, this_policy.link_name)
         self.verify_title(this_policy.get_header(this_policy.page_name),
                           this_policy.page_name,
                           this_policy.title_key)
+
+    def test_argus_sitemap_from_homepage(self):
+        this_sitemap = argus_sitemap_page.SiteMapPage()
+        this_sitemap.land_page_from_parent(this_sitemap.parent_page, this_sitemap.link_name)
+        self.verify_title(this_sitemap.get_header(this_sitemap.page_name),
+                          this_sitemap.page_name,
+                          this_sitemap.title_key)
+
+    def test_argus_sitemap_links(self):
+        this_sitemap = argus_sitemap_page.SiteMapPage()
+        this_sitemap.land_page(this_sitemap.page_name)
+        self.assertTrue(this_sitemap.verify_links(),"Links in the SiteMap: %s does not match the expected: %s!" %(this_sitemap.get_map_links(),this_sitemap.get_expected_links()))
+
 
 if __name__ == '__main__':
     unittest.main()
