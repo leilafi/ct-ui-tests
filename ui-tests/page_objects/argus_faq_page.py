@@ -6,6 +6,5 @@ class FAQPage(base_page.BasePage):
     def __init__(self):
         base_page.BasePage.__init__(self)
         self.page_name = "argusfaqs"
-        self.header = "page-header"
         self.parent_page = "argushomepage"
         self.link_name = "FAQs"
