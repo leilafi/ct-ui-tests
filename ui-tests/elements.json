@@ -6,7 +6,10 @@
     {"key": "all-countries", "searchby":"link text", "value":["Australia", "Canada", "Cyprus", "France", "Germany", "Greece", "Italy", "Ireland", "Netherlands",
       "New Zealand", "South Africa", "Spain", "Switzerland", "Thailand", "Malaga", "Faro", "Alicante", "Dublin", "Mallorca", "Porto", "Kefalonia", "Rhodes",
       "Barcelona", "Lisbon", "London"]},
-    {"key":"contact-us", "searchby":"link text", "value":"Contact Us"}],
+    {"key":"contact-us", "searchby":"link text", "value":"Contact Us"},
+    {"key":"FAQs", "searchby":"link text", "value":"FAQs"},
+    {"key":"tandc", "searchby":"link text", "value":"Terms and Conditions"},
+    {"key":"policy", "searchby":"link text", "value":"Privacy Policy"}],
  "arguslocation":
   [{"key":"page-title","searchby":"title", "value":"Car Hire ITALY"},
     {"key":"url", "searchby":"none" ,"value":"http://www.arguscarhire.com/car-hire/greece.html"},
@@ -29,5 +32,17 @@
   "arguscontactus":
     [{"key":"page-header", "searchby":"css selector", "value":"h1"},
       {"key":"page-title", "searchby":"title", "value":"Customer Service"}
+    ],
+  "argusfaqs":
+    [{"key":"page-header", "searchby":"css selector", "value":"h1"},
+      {"key":"page-title", "searchby":"title", "value":"FAQ"}
+    ],
+  "argustandc":
+    [{"key":"page-header", "searchby":"css selector", "value":"h1"},
+      {"key":"page-title", "searchby":"title", "value":"Terms and Conditions"}
+    ],
+  "arguspolicy":
+    [{"key":"page-header", "searchby":"css selector", "value":"h1"},
+      {"key":"page-title", "searchby":"title", "value":"Privacy Policy"}
     ]
 }

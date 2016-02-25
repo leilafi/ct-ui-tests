@@ -31,7 +31,7 @@ class BaseTest(unittest.TestCase):
         clicked_history = []
         this_page.land_page(this_page.page_name)
         element = this_page.all_locations
-        all_location_links = this_page.get_locations_text_and_element(this_page.page_name,this_page.all_locations) # this is only to get the number of links
+        all_location_links = this_page.get_link_text_and_element(this_page.page_name,this_page.all_locations) # this is only to get the number of links
         number_links = len(all_location_links)
         for i in range(0, number_links): # For number of links do these steps
             this_page.land_page(this_page.page_name) # Go to homepage to get a fresh dict of links_text and elements
