@@ -35,7 +35,7 @@ class BaseTest(unittest.TestCase):
         number_links = len(all_location_links)
         for i in range(0, number_links): # For number of links do these steps
             this_page.land_page(this_page.page_name) # Go to homepage to get a fresh dict of links_text and elements
-            location_dict = this_page.get_locations_text_and_element(this_page.page_name,this_page.all_locations)
+            location_dict = this_page.get_link_text_and_element(this_page.page_name,this_page.all_locations)
             if len(clicked_history) > 0: # Already clicked links has to be removed
                 location_dict_cut = self.remove_keys(location_dict,clicked_history)
             else:location_dict_cut = location_dict

@@ -25,6 +25,7 @@ class SiteMapPage(base_page.BasePage):
     def verify_links(self):
         if self.get_map_links()!= self.get_expected_links():
             return False
-        else: return True
+        else:
+            return True
 
 

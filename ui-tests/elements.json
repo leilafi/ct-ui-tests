@@ -10,7 +10,10 @@
     {"key":"FAQs", "searchby":"link text", "value":"FAQs"},
     {"key":"tandc", "searchby":"link text", "value":"Terms and Conditions"},
     {"key":"policy", "searchby":"link text", "value":"Privacy Policy"},
-    {"key":"sitemap", "searchby":"link text", "value":"Site Map"}],
+    {"key":"sitemap", "searchby":"link text", "value":"Site Map"},
+    {"key":"cookies", "searchby":"link text", "value":"Cookie Policy"},
+    {"key":"pricepromise", "searchby":"link text", "value":"Price promise"},
+    {"key":"carhire", "searchby":"link text", "value":"Car Hire Locations"}],
  "arguslocation":
   [{"key":"page-title","searchby":"title", "value":"Car Hire ITALY"},
     {"key":"url", "searchby":"none" ,"value":"http://www.arguscarhire.com/car-hire/greece.html"},
@@ -53,5 +56,13 @@
       {"key":"links", "searchby":"css selector", "value": "div.argus-container div.container div.pull-left ul li a"},
       {"key":"expectedlinks", "searchby":"link text", "value":["Home", "About Us", "Manage booking", "Customer Service", "Price Guarantee",
         "Terms and Conditions", "Privacy Policy", "Cookies Policy", "My Argus", "FAQs", "Car Hire Locations"]}
+    ],
+  "arguscookies":
+    [{"key":"page-header", "searchby":"css selector", "value":"h1"},
+      {"key":"page-title", "searchby":"title", "value":"Our Cookies Policy"}
+    ],
+  "arguspricepromise":
+    [{"key":"page-header", "searchby":"css selector", "value":"h1"},
+      {"key":"page-title", "searchby":"title", "value":"Price Guarantee"}
     ]
 }
