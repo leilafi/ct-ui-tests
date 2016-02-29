@@ -45,7 +45,6 @@ class BaseTest(unittest.TestCase):
             print "check if %s is in %s" %(link_text, this_page.get_title())
             self.assertIn(lower(link_text), lower(this_page.get_title()), "%s was not in expected: %s" % (link_text, this_page.get_title()))
 
-
     def tearDown(self):
         print "Finished:", self._testMethodName
         print "\n"
