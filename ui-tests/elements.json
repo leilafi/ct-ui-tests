@@ -1,5 +1,5 @@
 {"argushomepage":
-  [{"key":"url", "searchby":"none", "value":"http://www.arguscarhire.com/"},
+  [{"key":"url", "searchby":"none", "value":"https://arguscarhire-staging.red-badger.com/"},
     {"key":"page-title","searchby":"title", "value":"Argus Car Hire compares the prices of 1200 car hire agents at 30,000 locations worldwide to find you the cheapest deal!"},
     {"key": "popular-country", "searchby":"link text", "value":"Italy"},
     {"key":"popular-city", "searchby":"link text", "value":"Mallorca"},
@@ -16,17 +16,17 @@
     {"key":"carhire", "searchby":"link text", "value":"Car Hire Locations"}],
  "arguslocation":
   [{"key":"page-title","searchby":"title", "value":"Car Hire ITALY"},
-    {"key":"url", "searchby":"none" ,"value":"http://www.arguscarhire.com/car-hire/greece.html"},
+    {"key":"url", "searchby":"none" ,"value":"https://arguscarhire-staging.red-badger.com/car-hire/greece.html"},
     {"key":"popular-destination", "searchby":"class name", "value":"mostpopular"},
     {"key": "airport", "searchby":"partial link text", "value":"Airport"}],
   "argusdestination":
   [{"key":"page-title", "searchby":"title", "value":"Airport"},
     {"key":"page-header", "searchby":"css selector", "value":"h2"}],
   "arguscarhire":
-  [{"key":"url", "searchby":"none", "value":"http://www.arguscarhire.com/car-hire/"},
+  [{"key":"url", "searchby":"none", "value":"https://arguscarhire-staging.red-badger.com/car-hire/"},
     {"key":"all-countries", "searchby":"link text", "value":["Albania"]}],
   "arguslanguages":
-  [{"key":"url", "searchby":"none", "value":"http://www.arguscarhire.com/"},
+  [{"key":"url", "searchby":"none", "value":"https://arguscarhire-staging.red-badger.com/"},
     {"key":"language-menu", "searchby":"css selector", "value":"div.selectedValue"},
     {"key":"popular-language", "searchby":"xpath", "value":"//div[@id='select-lang_dropdown']/div[2]/div/div/dl/div/div/dd[4]"},
     {"key":"popular-translation", "searchby":"link text", "value":"Gestione prenotazione"},
@@ -52,7 +52,7 @@
   "argussitemap":
     [{"key":"page-header", "searchby":"css selector", "value":"h1"},
       {"key":"page-title", "searchby":"title", "value":"Site Map"},
-      {"key":"url", "searchby":"none", "value":"http://www.arguscarhire.com/sitemap/"},
+      {"key":"url", "searchby":"none", "value":"https://arguscarhire-staging.red-badger.com/sitemap/"},
       {"key":"links", "searchby":"css selector", "value": "div.argus-container div.container div.pull-left ul li a"},
       {"key":"expectedlinks", "searchby":"link text", "value":["Home", "About Us", "Manage booking", "Customer Service", "Price Guarantee",
         "Terms and Conditions", "Privacy Policy", "Cookies Policy", "My Argus", "FAQs", "Car Hire Locations"]}
